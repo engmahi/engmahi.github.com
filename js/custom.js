@@ -28,65 +28,49 @@ jQuery(function ($) {
 
     });
 
+
     //======================================
-    // password check by keyup function
+    // Instagram Feed
     //======================================
 
     $(function(){
+        $('.instagram').instagramLite({
+            username: 'engmahi',
+            clientID: '199554eb34504658a4770d2859b5a583',
+            urls: true,
+            limit: 12,
+            list: false,
+            captions: false,
+            date: false,
+            likes: false,
+            comments_count: false,
+            load_more: '#mahi'
+        });
+    });
 
-        $('#password').keyup(function(){
-            var len = $('#password').val().length;
 
-            console.log('Hello Sir');
+    //======================================
+    // Magnific Popup
+    //======================================
 
-            if ( len<1 ) {
-                $('.show').text('Please Input Your Password Here').removeClass('red orange green');
-            }
+    $(function() {
 
-            else if ( len<=4 ) {
-                $('.show').text('Week Password').addClass('red').removeClass('orange green');
-            }
+        $('.instagram').magnificPopup({
+          delegate: 'a', // child items selector, by clicking on it popup will open
+          type: 'image',
 
-            else if ( len<=8 ) {
-                $('.show').text('Good Password').addClass('orange').removeClass('red green');
-            }
+          gallery: {
+            enabled: true
+          },
 
-            else {
-                $('.show').text('Strong Password').addClass('green').removeClass('red orange');
-            }
+          zoom: {
+            enabled: true,
+            duration: 300
+          },
+          mainClass: 'mfp-fade'
         });
 
     });
 
-    //======================================
-    // define hight by jQuery
-    //======================================
-
-    $(function(){
-
-        var $oneHeight = $('.one').height(),
-            $oneWidth = $('.one').width();
-
-        $('.two').height($oneHeight).width($oneWidth);
-        
-    });
-
-    //======================================
-    // Learn scroll function
-    //======================================
-
-    $(function(){
-       $(window).scroll(function() {
-            var nav = $('.navbar-default'),
-                $this = $(this);
-
-            if($this.scrollTop() > 100) {
-                nav.addClass('sticky-nav animated fadeInDown');
-            } else {
-                nav.removeClass('sticky-nav animated fadeInDown');
-            }
-
-       });
-    });
 
 });
