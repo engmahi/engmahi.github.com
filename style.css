@@ -1,0 +1,106 @@
+@import url('https://cdn.jsdelivr.net/animatecss/3.4.0/animate.min.css');
+
+section {
+	padding: 100px 0;
+}
+
+a {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.red {
+	color: #fff;
+	background: red;
+	padding: 0 10px;
+}
+
+.orange {
+	color: #fff;
+	background: orange;
+	padding: 0 10px;
+}
+
+.green {
+	color: #fff;
+	background: green;
+	padding: 0 10px;
+}
+
+.portfolio-item {
+	position: relative;
+}
+
+.portfolio-item img {
+	width: 100%;
+}
+
+.portfolio-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	background: rgb(140, 0, 210);
+
+
+	-webkit-transform:translateX(-50%) translateY(-50%) ;
+	-moz-transform:translateX(-50%) translateY(-50%) ;
+	-ms-transform:translateX(-50%) translateY(-50%) ;
+	-o-transform:translateX(-50%) translateY(-50%) ;
+	transform:translateX(-50%) translateY(-50%) ;
+}
+
+.portfolio-overlay i {}
+.portfolio-overlay h2 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.portfolio-overlay p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.one {
+	width: 35%;
+	background: #8CD0D2;
+	padding: 20px;
+	text-align: center;
+	line-height: 300px;
+	margin-bottom: 30px;
+	display: table;
+}
+
+.one h1,
+.two h1 {
+	font-size: 32px;
+	line-height: 35px;
+}
+
+.two {
+	background: #f09066;
+	padding: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.three {
+	background: pink;
+	padding: 20px;
+	display: table-cell;
+}
+
+.three h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+
+.sticky-nav {
+	background: #28ffcc;
+}
+
